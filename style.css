@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 0.521vw;
+}
+.todo-app{
+    width: 100%;
+    max-width: 28.125vw;
+    background-color: #fff;
+    margin: 0.521vw auto 1.042vw;
+    padding: 2.083vw 1.563vw 3.646vw;
+    border-radius:0.521vw;
+}
+.todo-app h2{
+    color:#002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.042vw;
+}
+.todo-app h2 img{
+    width: 1.563vw;
+    margin-left: 0.521vw;  
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 1.563vw;
+    padding-left: 1.051vw;
+    margin-bottom: 1.302vw;
+}
+input{
+    flex:1;  /*yeh flex:1 full width leta hai input box ki */
+    border: none;
+    outline: none;  
+    background-color: transparent;
+    padding: 0.521vw;
+    font-size: 0.729vw;
+}
+button{
+    border: none;
+    outline: none; 
+    padding: 0.833vw 2.604vw;
+    background-color: #ff5945;
+    color:#fff;
+    font-size: 0.829vw;
+    cursor: pointer;
+    border-radius: 2.083vw;
+}
+ul li{
+    list-style: none;
+    font-size: 0.885vw;
+    padding:0.625vw 0.417vw 0.625vw 2.604vw;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 1.458vw;
+    width: 1.458vw;
+    border-radius: 50%;
+    background-image: url("WhatsApp_Image_2024-05-13_at_18.23.32_bfccefed-removebg-preview.png");
+    background-size: cover;
+    background-position: center;
+    top:0.6256vw;
+    left:0.417vw;
+}
+.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+.checked::before{
+    background-image: url("WhatsApp\ Image\ 2024-05-13\ at\ 18.23.32_bf19d52d.jpg");
+}
+
+ul li span{
+    position:absolute;
+    right: 0;
+    top:5px;
+    width:40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background-color: #edeef0;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:412px) {
+    
+#container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 0.521vw;
+}
+.todo-app{
+
+    width: 100%;
+    max-width: 250px;
+    background-color: #fff;
+    margin: 20.521vw auto 2.042vw;
+    padding: 2.083vw 1.563vw 3.646vw;
+    border-radius:0.521vw;
+}
+.todo-app h2{
+    color:#002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.042vw;
+    font-size: 20px;
+}
+.todo-app h2 img{
+    width: 5.563vw;
+    margin-left: 5.521vw;  
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 1.563vw;
+    padding-left: 1.051vw;
+    margin-bottom: 4.302vw;
+    margin-top: 4.302vw;
+}
+input{
+    flex:1;  /*yeh flex:1 full width leta hai input box ki */
+    border: none;
+    outline: none;  
+    background-color: transparent;
+    padding: 2.521vw;
+    font-size: 2.729vw;
+}
+button{
+    border: none;
+    outline: none; 
+    padding: 2.833vw 4.004vw;
+    background-color: #ff5945;
+    color:#fff;
+    font-size: 2.829vw;
+    cursor: pointer;
+    border-radius: 2.083vw;
+}
+ul li{
+    list-style: none;
+    font-size: 3.885vw;
+    /* padding:1.625vw 1.417vw 1.625vw 2.604vw; */
+    padding-left: 30px;
+    padding-top: 8px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;    
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 4.458vw;
+    width: 4.458vw;
+    border-radius: 50%;
+    background-image: url("WhatsApp_Image_2024-05-13_at_18.23.32_bfccefed-removebg-preview.png");
+    background-size: cover;
+    background-position: center;
+    top:2.2256vw;
+    left:0.417vw;
+    
+}
+.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+.checked::before{
+    background-image: url("WhatsApp\ Image\ 2024-05-13\ at\ 18.23.32_bf19d52d.jpg");
+}
+
+ul li span{
+    position:absolute;
+    right: 0;
+    top:-10%;
+    width:40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background-color: #edeef0;
+    border-radius: 50%;
+}  
+
+}
